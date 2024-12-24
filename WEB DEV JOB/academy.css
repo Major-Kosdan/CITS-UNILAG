@@ -1,0 +1,329 @@
+/* General Reset */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+display: flex;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 100;
+background-color: white;
+padding: 10px 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+display: flex;
+align-items: center;
+margin-left: 50px;
+}
+
+.logo img {
+height: 80px;
+margin-left: 30px;
+
+}
+
+.nav-text {
+font-size: 14px;
+line-height: 1.2;
+color: black;
+
+}
+
+.nav-text strong {
+font-size: 16px;
+color: #a80000; /* Red text */
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li {
+margin: 0 10px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: black;
+font-size: 14px;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #a80000; /* Red on hover */
+}
+
+.btn {
+padding: 10px 20px;
+background-color: #b41e1e;
+color: #fff !important;
+text-decoration: none;
+border-radius: 5px;
+font-size: 14px; /* Match the font size */
+font-weight: bold; /* Make the text bold */
+text-decoration: none;
+border: none; /* Remove any border */
+transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+}
+
+.btn:hover {
+background-color: #a80000; /* Slightly lighter red on hover */
+transform: scale(1.05); /* Add a subtle zoom-in effect on hover */
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #f2f2f2;
+    position: relative;
+    height: 400px;
+}
+
+.hero-content {
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+
+.hero-content .subheading {
+    font-family: 'Cursive';
+    color: #5e32a8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #232323;
+    margin: 10px 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #7e7e7e;
+    margin: 20px 0;
+}
+
+.btn-enroll {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enroll:hover {
+    background-color: #333;
+}
+
+.hero-image {
+    max-width: 60%;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-out;
+   
+}
+
+/* Styling for the decorative red element */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #db3545;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* General Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+  }
+  
+  .left {
+    width: 60%;
+  }
+  
+  .who-we-are h3 {
+    color: #d32f2f;
+    font-weight: 600;
+  }
+  
+  .who-we-are h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .who-we-are p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .right {
+    width: 35%;
+  }
+  
+  .course-info {
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  
+  .course-info h3 {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .course-info h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .star {
+    color: #ffcc00;
+    font-size: 1.2rem;
+  }
+  
+  .reviews {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .view-courses {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-courses:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Courses Section */
+  .course-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .course-section h2 {
+    color: #d32f2f;
+    font-weight: 700;
+  }
+  
+  .course-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course-card h4 {
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #333;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation Styling */
+  [data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+
+
+
+
+
+
